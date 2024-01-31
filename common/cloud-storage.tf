@@ -1,5 +1,5 @@
-resource "google_storage_bucket" "test_bucket" {
-    name          = "test-bucket"
+resource "google_storage_bucket" "test_crossplane_bucket" {
+    name          = "test-crossplane-bucket"
     location      = "US"
     storage_class = "STANDARD"
 
