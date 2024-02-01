@@ -1,3 +1,13 @@
+variable "storage_class" {
+  type        = string
+  description = "Storage class of bucket"
+}
+
+variable "location" {
+  type        = string
+  description = "Location of bucket"
+}
+
 # Recursos generales relacionados con proyectos
 variable "project_id" {
   type        = string
