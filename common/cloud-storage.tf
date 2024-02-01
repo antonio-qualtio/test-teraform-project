@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "test_crossplane_bucket" {
-    name          = "test-crossplane-bucket-qualtio"
+    name          = var.bucket_name
     location      = var.location
     storage_class = var.storage_class
 

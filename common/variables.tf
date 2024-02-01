@@ -8,6 +8,11 @@ variable "location" {
   description = "Location of bucket"
 }
 
+variable "bucket_name" {
+  type        = string
+  description = "Name of bucket"
+}
+
 # Recursos generales relacionados con proyectos
 variable "project_id" {
   type        = string
