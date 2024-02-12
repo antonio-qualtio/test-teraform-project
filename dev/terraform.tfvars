@@ -1,2 +1,1 @@
-storage_class = "NEARLINE"
-location = "US"
+location = "EU"
