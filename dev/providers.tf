@@ -1,19 +1,11 @@
 provider "google" {
-    credentials = "qualtio-dev-credentials.json"
+    credentials = var.gcp-creds
     project = "qualtio-dev"
     region  = "us-central1"
     zone    = "us-central1-c"
 }
 
 terraform {
-  cloud {
-    organization = "antonio_qualtio"
-
-    workspaces {
-      name = "test-teraform-project"
-    }
-  }
-
   backend "local" {
     path = "terraform.tfstate"
   }
