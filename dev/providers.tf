@@ -1,15 +1,11 @@
-provider "google" {
-    credentials = var.gcp-creds
-    project = "qualtio-dev"
-    region  = "us-central1"
-    zone    = "us-central1-c"
-}
+# provider "google" {
+#     credentials = var.gcp-creds
+#     project = "qualtio-dev"
+#     region  = "us-central1"
+#     zone    = "us-central1-c"
+# }
 
-terraform {
-  backend "local" {
-    path = "terraform.tfstate"
-  }
-}
+
 
 // Modules _must_ use remote state. The provider does not persist state.
 # terraform {
