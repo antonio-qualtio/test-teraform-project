@@ -1,9 +1,8 @@
-# provider "google" {
-#     credentials = var.gcp-creds
-#     project = "qualtio-dev"
-#     region  = "us-central1"
-#     zone    = "us-central1-c"
-# }
+provider "google" {
+    project = "qualtio-dev"
+    region  = "us-central1"
+    zone    = "us-central1-c"
+}
 
 
 
